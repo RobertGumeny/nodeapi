@@ -10,6 +10,9 @@ dotenv.config({ path: "./config/config.env" });
 
 const app = express();
 
+// Body parser
+app.use(express.json());
+
 // Connect to database
 connectDB();
 
